@@ -1,3 +1,5 @@
+package Main.java;
+
 public class Book {
     private String title;
     private String author;
@@ -50,7 +52,7 @@ public class Book {
 
 
     public String toString() {
-        return "Book:" +
+        return "Main.java.Book:" +
                 "title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", pages='" + pages + '\'' +

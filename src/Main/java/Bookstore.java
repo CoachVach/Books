@@ -1,3 +1,5 @@
+package Main.java;
+
 import java.util.Arrays;
 
 public class Bookstore {
@@ -13,6 +15,10 @@ public class Bookstore {
     // Getter methods
     public Book[] getBooks() {
         return this.books;
+    }
+
+    public int getBookAmount() {
+        return this.numberOfBooks;
     }
 
     public void addBook(Book newBook) {
@@ -48,7 +54,7 @@ public class Bookstore {
         int pages = 100;
         int count = 0;
         for (Book book : books) {
-            if (book != null && book.getPages() < 100) {
+            if (book != null && book.getPages() < pages) {
                 count++;
             }
         }
